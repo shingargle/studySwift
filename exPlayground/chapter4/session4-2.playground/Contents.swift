@@ -2,6 +2,46 @@
 
 import UIKit
 
+func cap(str:String) -> String {
+    let start = str.startIndex
+    let chr = str[start]
+    let str1 = String(chr)
+
+    let second = start.successor()
+    let str2 = str.substringFromIndex(second)
+    
+    let capStr = str1.uppercaseString + str2.lowercaseString
+    return capStr
+}
+repeat {
+    let str1 = cap("apple")
+    let str2 = cap("APPLE")
+    
+    print((str1,str2))
+} while false
+repeat {
+    let str = "Swift入門"
+    let zero = str.startIndex
+    let index = zero.advancedBy(5)
+    let chr = str[index]
+    let str1 = str.substringToIndex(index)
+    let str2 = str.substringFromIndex(index)
+    print(chr)
+    print(str1)
+    print(str2)
+} while false
+repeat {
+    let str = "Swift入門"
+    let zero = str.startIndex
+    let start = zero.advancedBy(3)
+    let end = zero.advancedBy(6)
+    
+    let str1 = str[start...end]
+    let str2 = str[start..<end]
+    print(str1)
+    print(str2)
+} while false
+
 repeat
 {
     let str = "Swift 入門ノート"
