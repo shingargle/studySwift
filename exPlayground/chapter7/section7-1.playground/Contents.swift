@@ -21,6 +21,6 @@ if true {
 
 if true {
     var msg:String? = "Hello"
-    let newString:String? = msg! + " World"
+    let newString:String = msg! + " World"
     print(newString)
 }
