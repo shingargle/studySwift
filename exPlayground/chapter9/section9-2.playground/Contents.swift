@@ -66,6 +66,49 @@ if true {
     }
 }
 
+enum Pattern2 {
+    case Monotone(PColor)
+    case Border(color1:PColor, color2:PColor)
+    case Dots(base:PColor, dot1:PColor, dot2:PColor)
+    
+    // パターンで使える色
+    enum PColor:String {
+        case red = "赤"
+        case green = "緑"
+        case yellow = "黄"
+        case white = "白"
+    }
+}
+
+
+
+if true {
+    let shirt1 = Pattern2.Monotone(.red)
+    let shirt2 = Pattern2.Border(color1: .white, color2: .red)
+    let shirt3 = Pattern2.Dots(base: .yellow, dot1: .white, dot2: .green)
+    
+    let patternList = [shirt1, shirt2, shirt3]
+    for thePattern in patternList {
+        switch thePattern {
+        case .Monotone(let c):
+            print("\(c.rawValue)の無地")
+            
+        case .Border(let c1, let c2):
+            print("\(c1.rawValue)と\(c2.rawValue)のボーダー")
+        case .Dots(let base, let dot1, let dot2):
+            let bColor = base.rawValue
+            let dc1 = dot1.rawValue
+            let dc2 = dot2.rawValue
+            print("\(bColor)地に\(dc1)と\(dc2)のドット")
+        }
+    }
+}
+
+
+
+
+
+
 
 
 
