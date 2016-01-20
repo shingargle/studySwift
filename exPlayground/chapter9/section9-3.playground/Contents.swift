@@ -79,6 +79,17 @@ if true {
     cBox2.color = "green"
     
     let sBox1 = BoxStruct()
+    var sBox2 = sBox1
+    sBox2.color = "green"
+    
+    // 値を確認する
+    print("cBox1:\(cBox1.size) \(cBox1.color)")
+    print("cBox2:\(cBox2.size) \(cBox2.color)")
+    print("sBox1:\(sBox1.size) \(sBox1.color)")
+    print("sBox2:\(sBox2.size) \(sBox2.color)")
+    
+    
+    
     
     
     
