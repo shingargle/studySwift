@@ -44,4 +44,51 @@ if true {
 }
 
 
+if true {
+    struct Ball {
+        static let madein = "日本"
+        static var sozai = "紙"
+        var radius:Double = 10.0
+    }
+    
+    Ball.sozai = "木"
+    let ball1 = Ball(radius: 15)
+    let ball2 = Ball()
+//    print((ball1.radius, ball1.madein, ball1.sozai))
+    print(ball1.radius)
+    print(ball2.radius)
+    print(Ball.madein)
+    print(Ball.sozai)
+    
+    print(ball1)
+}
 
+if true {
+    class BoxClass {
+        var size:String = "M"
+        var color:String = "red"
+    }
+    struct BoxStruct {
+        var size:String = "M"
+        var color:String = "red"
+    }
+    
+    let cBox1 = BoxClass()
+    let cBox2 = cBox1
+    
+    cBox2.color = "green"
+    
+    let sBox1 = BoxStruct()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
