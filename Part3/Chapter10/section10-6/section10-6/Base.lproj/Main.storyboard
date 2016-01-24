@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="20150920_121930" translatesAutoresizingMaskIntoConstraints="NO" id="o0V-sz-Ck9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="20150920_121930" translatesAutoresizingMaskIntoConstraints="NO" id="o0V-sz-Ck9">
                                 <rect key="frame" x="30" y="128" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="202" id="MGg-Sv-eBY"/>
@@ -57,7 +57,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D3W-Pk-Pxb">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="並木" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vH-yD-0Hy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="並木" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vH-yD-0Hy">
                                 <rect key="frame" x="317" y="223" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -90,6 +90,7 @@
                             <mask key="constraints">
                                 <exclude reference="TxD-JS-Wrc"/>
                                 <exclude reference="yaP-JW-jaL"/>
+                                <exclude reference="rZO-Mi-mG2"/>
                                 <exclude reference="K3j-uw-2Hr"/>
                                 <exclude reference="KsT-bF-4Ru"/>
                                 <exclude reference="XNP-Bg-TiT"/>
@@ -100,7 +101,6 @@
                                 <exclude reference="bnz-N8-hUK"/>
                                 <exclude reference="fg5-Ii-zIg"/>
                                 <exclude reference="GhS-I6-XKK"/>
-                                <exclude reference="rZO-Mi-mG2"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -108,12 +108,12 @@
                                 <include reference="D3W-Pk-Pxb"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="rZO-Mi-mG2"/>
                                 <include reference="XNP-Bg-TiT"/>
                                 <include reference="uNS-oX-c2U"/>
                                 <include reference="ToA-IR-NkA"/>
                                 <include reference="fg5-Ii-zIg"/>
                                 <include reference="GhS-I6-XKK"/>
-                                <include reference="rZO-Mi-mG2"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">

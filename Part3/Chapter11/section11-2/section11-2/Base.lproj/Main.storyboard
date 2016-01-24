@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="section11_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="myLabel1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaW-di-G05">
+                                <rect key="frame" x="20" y="20" width="125" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="Eaq-LE-BgD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="myLabel2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7M-wi-bGd">
+                                <rect key="frame" x="20" y="75" width="125" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="hU4-80-gpl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="myLabel3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koW-RG-PW5">
+                                <rect key="frame" x="20" y="134" width="125" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="d2D-Yy-ikZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="koW-RG-PW5" firstAttribute="top" secondItem="D7M-wi-bGd" secondAttribute="bottom" constant="38" id="14m-NQ-Cle"/>
+                            <constraint firstItem="D7M-wi-bGd" firstAttribute="leading" secondItem="iaW-di-G05" secondAttribute="leading" id="N1L-9E-0lK"/>
+                            <constraint firstItem="koW-RG-PW5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OKl-sp-iS3"/>
+                            <constraint firstItem="koW-RG-PW5" firstAttribute="leading" secondItem="D7M-wi-bGd" secondAttribute="leading" id="PbY-g3-ZGv"/>
+                            <constraint firstItem="iaW-di-G05" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="RUT-eu-rzk"/>
+                            <constraint firstItem="D7M-wi-bGd" firstAttribute="top" secondItem="iaW-di-G05" secondAttribute="bottom" constant="34" id="zfI-bZ-k5E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myLabel1" destination="iaW-di-G05" id="xAA-wg-qyD"/>
+                        <outlet property="myLabel2" destination="D7M-wi-bGd" id="xxN-VU-wPf"/>
+                        <outlet property="myLabel3" destination="koW-RG-PW5" id="ov1-Uw-Fuc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="347"/>
+        </scene>
+    </scenes>
+</document>
