@@ -14,14 +14,28 @@ class ViewController: UIViewController {
     
     @IBAction func hello(sender: AnyObject) {
         myLabel.text = "こんにちは"
+        myLabel.lineBreakMode = .ByTruncatingHead
     }
     
     @IBAction func thanks(sender: AnyObject) {
         myLabel.text = "ありがとう"
+        myLabel.lineBreakMode = .ByTruncatingTail
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        // ラベルを作成する
+        let codeLabel = UILabel()
+        codeLabel.text = "ハローワールド"
+        
+        // ラベルの領域
+        codeLabel.frame = CGRect(x: 100, y: 300, width: 200, height: 21)
+       codeLabel.textColor = UIColor.blackColor()
+        codeLabel.backgroundColor = UIColor.lightGrayColor()
+        
+        view.addSubview(codeLabel)
+        
     }
 
     override func didReceiveMemoryWarning() {
