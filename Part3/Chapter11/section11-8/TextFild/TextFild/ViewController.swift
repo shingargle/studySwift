@@ -12,11 +12,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var myTextField: UITextField!
     @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var testField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // myTextFieldのデリゲートになる
         myTextField.delegate = self
+        testField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +27,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func tapView(sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+    
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
+        
         // 変更後の内容を作成する
         var tmpStr = textField.text! as NSString
         tmpStr = tmpStr.stringByReplacingCharactersInRange(range, withString: string)
@@ -43,6 +52,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldClear(textField: UITextField) -> Bool {
         myLabel.text = "0"
         return true
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 
 

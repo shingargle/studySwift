@@ -29,15 +29,30 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pwy-aP-lgd">
+                                <rect key="frame" x="20" y="130" width="209" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="g9x-hb-kXp" appends="YES" id="KUw-I3-lHU"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="myLabel" destination="BBp-wQ-MLO" id="pEN-yQ-hWg"/>
                         <outlet property="myTextField" destination="ezi-ZS-Vsr" id="FKf-R8-0qb"/>
+                        <outlet property="testField" destination="Pwy-aP-lgd" id="oL8-Uv-giM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="g9x-hb-kXp">
+                    <connections>
+                        <action selector="tapView:" destination="BYZ-38-t0r" id="Uxx-pA-799"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="305" y="362"/>
         </scene>
